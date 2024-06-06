@@ -1,4 +1,4 @@
-# SOFTMAX FUNCTION WITH VERILOG
+# SOFTMAX FUNCTION WITH VERILOG 
 ### 1. Softmax
     - Softmax is an activation function and is used in the last layer in the neural network like CNN, DNN,...
 ![Softmax regression model as a neural network ](illustrating%20images/soft_max_neural.png)
@@ -37,12 +37,12 @@
     -   The image below shows the softmax hardware and softmax software output. 
     -   Max error with a sample input above is 3.e-10. 
 ![alt text](illustrating%20images/hardware_software_result.png)
-### 6. Experiment
+### 6. Experiment - [Project Source](https://drive.google.com/drive/folders/1HuWx-jO9p7ZGT83h_ViIQRIWQ5I0vAsK?usp=drive_link)
 #### 6.1 Package IP
     -   RTL code was packaged with slave AXI4-Lite, slave and master AXI4-Stream into a IP core. And it was intergated into a SOC.
 
 ![package_ip](illustrating%20images/softmax_ip.png)
-#### 6.2 Intergrated into SOC
+#### 6.2 Intergrated into SOC 
     -   The image below shows the SOC with Zynq PS, DMA IP, Softmax IP and some other blocks.
     -   SOC EXECUTION FLOW: 
         +   Input data will be initialized on DDR.
