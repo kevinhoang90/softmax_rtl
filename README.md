@@ -1,12 +1,18 @@
 # SOFTMAX FUNCTION WITH VERILOG 
 ### 1. Softmax
     - Softmax is an activation function and is used in the last layer in the neural network like CNN, DNN,...
-![Softmax regression model as a neural network ](illustrating%20images/soft_max_neural.png)
+
+<p align="center">
+    <image src="illustrating%20images/soft_max_neural.png">
+</p>
 
 ### 2. Mathetical Model
     - Input of softmax function is real vector z = {z1...zC} with C is number of class.
     - Output of softmax function is real(probability) vector a = {a1...aC} and sum of vector a is equal to 1.
-![Mathetical Model of Softmax function](illustrating%20images/softmax_mathetical_model.png)
+
+<p align="center">
+    <image src="illustrating%20images/softmax_mathetical_model.png">
+</p>
 
 ### 3. Hardware Implementation Approach
     - The simplest way is to directly implement the initial softmax expression. But it has some problems.
@@ -15,7 +21,10 @@
     - Improving the aforementioned problems.
         + Downscaling value of exp(zi) to exp(zi - zmax) with zmax is max value of vector input z.
         + Transfroming the expression for removing the division operator.
-![transfrom](illustrating%20images/transform_model.png)
+<p align="center">
+    <image src="illustrating%20images/transform_model.png">
+</p>
+
 ### 4. Specification
 - **Block diagram of softmax**
 
@@ -28,7 +37,11 @@
     -   The design was synthesized and implemented on Xilinx's Zedboard using Vivado 2018.3.
 #### 5.1 Implement
     -  Implement report (constraint clock with 14ns cycle).
-![hardware resouce](illustrating%20images/hardware_resource.png)
+
+<p align="center">
+    <image src="illustrating%20images/hardware_resource.png">
+</p>
+
 ![timing](illustrating%20images/timing.png)
 #### 5.2 Simulation
     -   the module was simulated with the input vector X = {-4,541; -4,22; -0,464; 4,684; 3,524}
@@ -41,7 +54,11 @@
 #### 6.1 Package IP
     -   RTL code was packaged with slave AXI4-Lite, slave and master AXI4-Stream into a IP core. And it was intergated into a SOC.
 
-![package_ip](illustrating%20images/softmax_ip.png)
+<p align="center">
+    <image high=190 src="illustrating%20images/softmax_ip.png">
+</p>
+
+
 #### 6.2 Intergrated into SOC 
     -   The image below shows the SOC with Zynq PS, DMA IP, Softmax IP and some other blocks.
     -   SOC EXECUTION FLOW: 
