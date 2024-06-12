@@ -44,7 +44,7 @@
 
 ![timing](illustrating%20images/timing.png)
 #### 5.2 Simulation
-    -   the module was simulated with the input vector X = {-4,541; -4,22; -0,464; 4,684; 3,524}
+    -   The module was simulated with the input vector X = {-4,541; -4,22; -0,464; 4,684; 3,524}
 ![alt text](illustrating%20images/simulation.png)
 
     -   The image below shows the softmax hardware and softmax software output. 
@@ -72,17 +72,27 @@
 ### 7. Result
 #### 7.1 Input
     -   Input in Simulation
-![alt text](illustrating%20images/in_simulation.png)
-    
+<p align="center">
+    <image src="illustrating%20images/in_simulation.png">
+</p>
+
     -   Input in ILA tool.
-![alt text](illustrating%20images/in_ILA.png)
+<p align="center">
+    <image src="illustrating%20images/in_ILA.png">
+</p>
+
 #### 7.2 Output
     -   Output in Simulation.
-![alt text](illustrating%20images/out_simulation.png)
+<p align="center">
+    <image src="illustrating%20images/out_simulation.png">
+</p>
 
     -   Output in ILA tool.
-![alt text](illustrating%20images/out_ILA.png)
-    
+
+<p align="center">
+    <image src="illustrating%20images/out_ILA.png">
+</p>    
+
     -   The data line of AXI4-Stream has 32 bits but only the first 16 bits was used to represent data.
 ###  8. Conclusion
     -   With all of the above results, We can conclude that the module hardware perform the Softmax function correctly.
