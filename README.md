@@ -48,7 +48,7 @@
 ![alt text](illustrating%20images/simulation.png)
 
     -   The image below shows the softmax hardware and softmax software output. 
-    -   Max error with a sample input above is 3.e-10. 
+    -   Max error with a sample input above is 3.e-3. 
 ![alt text](illustrating%20images/hardware_software_result.png)
 ### 6. Experiment - [Project Source](https://drive.google.com/drive/folders/1HuWx-jO9p7ZGT83h_ViIQRIWQ5I0vAsK?usp=drive_link)
 #### 6.1 Package IP
