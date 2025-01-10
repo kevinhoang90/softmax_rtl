@@ -206,8 +206,8 @@ module exp_2_block_16
     begin
         if (~reset_n_i)
         begin
-            //fixed point 0 signed, 0 integer, 32 fraction
-            LUT_EXP[11] <= 32'b0000_0000_0001_0101                                                              ; //e^-(2^3)
+            //fixed point 0 signed, 0 integer, 16 fraction
+            LUT_EXP[11] <= 16'b0000_0000_0001_0101                                                              ; //e^-(2^3)
             LUT_EXP[10] <= 16'b0000_0100_1011_0000                                                              ; //e^-(2^2)
             LUT_EXP[9]  <= 16'b0010_0010_1010_0101                                                              ; //e^-(2^1)
             LUT_EXP[8]  <= 16'b0101_1110_0010_1101                                                              ; //e^-(2^0)
