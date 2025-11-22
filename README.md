@@ -1,4 +1,4 @@
-# SOFTMAX FUNCTION WITH VERILOG 
+# SOFTMAX FUNCTION WITH VERILOG (publication: https://ieeexplore.ieee.org/document/11009039)
 ### 1. Softmax
     - Softmax is an activation function and is used in the last layer in the neural network like CNN, DNN,...
 
